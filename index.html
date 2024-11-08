@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morgenrutine Spil</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #b3e5fc;
+            background-image: url('https://example.com/clouds.png'), url('https://example.com/moon.png'), url('https://example.com/stars.png');
+            background-size: 150px, 80px, 50px;
+            background-repeat: no-repeat;
+            background-position: left top, right bottom, center;
+            margin: 0;
+            flex-direction: column;
+            color: #ff6f61;
+            text-align: center;
+        }
+        .content {
+            text-align: center;
+        }
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        .start-button {
+            padding: 20px 30px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #fff;
+            background-color: #f48fb1;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: transform 0.3s;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .start-button:hover {
+            background-color: #ff4081;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="content" id="homePage">
+        <h1>Er du klar til en spændende morgenrejse?</h1>
+        <button class="start-button" onclick="startMorgen()">Lad os komme i gang!</button>
+    </div>
+
+    <!-- Link til JavaScript-filen -->
+    <script src="morgenrutinejs.js"></script>
+</body>
+</html>
